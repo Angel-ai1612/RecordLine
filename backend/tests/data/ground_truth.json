@@ -1,0 +1,835 @@
+{
+  "description": "Small synthetic DocTrace data; not a general accuracy benchmark.",
+  "expectedConflicts": [
+    {
+      "canonicalField": "project_budget",
+      "documents": [
+        "medsaathi_proposal.pdf",
+        "medsaathi_meeting.docx",
+        "medsaathi_budget.xlsx",
+        "medsaathi_final_draft.pdf"
+      ],
+      "normalizedValues": [
+        "50000",
+        "65000"
+      ],
+      "project": "medsaathi",
+      "reason": "65000 is proposed but not approved; no winner.",
+      "winner": null
+    },
+    {
+      "canonicalField": "submission_deadline",
+      "documents": [
+        "medsaathi_proposal.pdf",
+        "medsaathi_meeting.docx",
+        "medsaathi_final_draft.pdf"
+      ],
+      "normalizedValues": [
+        "2026-11-20",
+        "2026-11-25"
+      ],
+      "project": "medsaathi",
+      "reason": "25 November is requested but not approved; no winner.",
+      "winner": null
+    }
+  ],
+  "expectedFacts": [
+    {
+      "canonicalField": "project_budget",
+      "document": "medsaathi_proposal.pdf",
+      "normalizedValue": "50000",
+      "rawValue": "Rs 50,000",
+      "set": "dev",
+      "status": "approved",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "submission_deadline",
+      "document": "medsaathi_proposal.pdf",
+      "normalizedValue": "2026-11-20",
+      "rawValue": "20 November 2026",
+      "set": "dev",
+      "status": "approved",
+      "unit": null
+    },
+    {
+      "canonicalField": "project_budget",
+      "document": "medsaathi_meeting.docx",
+      "normalizedValue": "65000",
+      "rawValue": "Rs. 65,000",
+      "set": "dev",
+      "status": "proposed",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "submission_deadline",
+      "document": "medsaathi_meeting.docx",
+      "normalizedValue": "2026-11-25",
+      "rawValue": "25 November 2026",
+      "set": "dev",
+      "status": "proposed",
+      "unit": null
+    },
+    {
+      "canonicalField": "expense_item",
+      "document": "medsaathi_receipt.png",
+      "normalizedValue": "4250",
+      "rawValue": "Rs 4,250",
+      "set": "dev",
+      "status": "stated",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "expense_item",
+      "document": "medsaathi_receipt.jpg",
+      "normalizedValue": "4250",
+      "rawValue": "Rs 4,250",
+      "set": "dev",
+      "status": "stated",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "expense_item",
+      "document": "medsaathi_receipt_scan.pdf",
+      "normalizedValue": "4250",
+      "rawValue": "Rs 4,250",
+      "set": "dev",
+      "status": "stated",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "project_budget",
+      "document": "medsaathi_budget.xlsx",
+      "normalizedValue": "65000",
+      "rawValue": "INR 65000",
+      "set": "dev",
+      "status": "stated",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "expense_item",
+      "document": "medsaathi_budget.xlsx",
+      "normalizedValue": "4250",
+      "rawValue": "4250",
+      "set": "dev",
+      "status": "stated",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "project_budget",
+      "document": "medsaathi_final_draft.pdf",
+      "normalizedValue": "50000",
+      "rawValue": "₹50,000",
+      "set": "dev",
+      "status": "stated",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "submission_deadline",
+      "document": "medsaathi_final_draft.pdf",
+      "normalizedValue": "2026-11-20",
+      "rawValue": "20/11/2026",
+      "set": "dev",
+      "status": "stated",
+      "unit": null
+    },
+    {
+      "canonicalField": "project_budget",
+      "document": "agrisense_brief.pdf",
+      "normalizedValue": "40000",
+      "rawValue": "Rs 40,000",
+      "set": "dev",
+      "status": "approved",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "submission_deadline",
+      "document": "agrisense_brief.pdf",
+      "normalizedValue": "2026-11-20",
+      "rawValue": "20 November 2026",
+      "set": "dev",
+      "status": "approved",
+      "unit": null
+    },
+    {
+      "canonicalField": "project_budget",
+      "document": "nanogrid_change_request.pdf",
+      "normalizedValue": "150000",
+      "rawValue": "Rs 1.5 lakh",
+      "set": "dev",
+      "status": "proposed",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "project_budget",
+      "document": "nanogrid_approval.docx",
+      "normalizedValue": "150000",
+      "rawValue": "INR 150000",
+      "set": "dev",
+      "status": "approved",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "project_budget",
+      "document": "nanogrid_final.pdf",
+      "normalizedValue": "150000",
+      "rawValue": "₹1,50,000",
+      "set": "dev",
+      "status": "stated",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "project_budget",
+      "document": "waterwise_plan.docx",
+      "normalizedValue": "72500",
+      "rawValue": "Rs. 72,500",
+      "set": "dev",
+      "status": "approved",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "project_budget",
+      "document": "waterwise_report.xlsx",
+      "normalizedValue": "72500",
+      "rawValue": "72500",
+      "set": "dev",
+      "status": "stated",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "project_budget",
+      "document": "harborlight_request.pdf",
+      "normalizedValue": "88000",
+      "rawValue": "Rs 88,000",
+      "set": "heldout",
+      "status": "proposed",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "project_budget",
+      "document": "harborlight_approval.docx",
+      "normalizedValue": "88000",
+      "rawValue": "INR 88000",
+      "set": "heldout",
+      "status": "approved",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "project_budget",
+      "document": "harborlight_final.xlsx",
+      "normalizedValue": "88000",
+      "rawValue": "88000",
+      "set": "heldout",
+      "status": "stated",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "project_budget",
+      "document": "orchardeye_plan.pdf",
+      "normalizedValue": "96000",
+      "rawValue": "₹96,000",
+      "set": "heldout",
+      "status": "approved",
+      "unit": "INR"
+    },
+    {
+      "canonicalField": "submission_deadline",
+      "document": "orchardeye_review.docx",
+      "normalizedValue": "2027-03-02",
+      "rawValue": "Mar 2, 2027",
+      "set": "heldout",
+      "status": "proposed",
+      "unit": null
+    },
+    {
+      "canonicalField": "project_budget",
+      "document": "orchardeye_final.pdf",
+      "normalizedValue": "96000",
+      "rawValue": "INR 96000",
+      "set": "heldout",
+      "status": "stated",
+      "unit": "INR"
+    }
+  ],
+  "expectedNonConflicts": [
+    {
+      "canonicalField": "project_budget",
+      "project": "nanogrid",
+      "reason": "later dated approval explains the change"
+    },
+    {
+      "canonicalField": "project_budget",
+      "project": "waterwise",
+      "reason": "all values agree"
+    },
+    {
+      "canonicalField": "project_budget",
+      "project": "harborlight",
+      "reason": "held-out request is approved"
+    },
+    {
+      "canonicalField": "submission_deadline",
+      "pair": [
+        "medsaathi_proposal.pdf",
+        "agrisense_brief.pdf"
+      ],
+      "reason": "different project clusters"
+    }
+  ],
+  "expectedTimeline": [
+    {
+      "document": "medsaathi_proposal.pdf",
+      "eventDate": "2026-11-03",
+      "fileDate": "2026-11-03",
+      "label": "Proposal approved as submitted",
+      "set": "dev"
+    },
+    {
+      "document": "medsaathi_meeting.docx",
+      "eventDate": "2026-11-07",
+      "fileDate": "2026-11-07",
+      "label": "Budget and deadline increase proposed",
+      "set": "dev"
+    },
+    {
+      "document": "medsaathi_receipt_scan.pdf",
+      "eventDate": "2026-11-09",
+      "fileDate": "2026-11-09",
+      "label": "Pilot kits purchased",
+      "set": "dev"
+    },
+    {
+      "document": "medsaathi_budget.xlsx",
+      "eventDate": "2026-11-10",
+      "fileDate": "2026-11-10",
+      "label": "Revised workbook prepared",
+      "set": "dev"
+    },
+    {
+      "document": "medsaathi_final_draft.pdf",
+      "eventDate": "2026-11-14",
+      "fileDate": "2026-11-14",
+      "label": "Draft prepared",
+      "set": "dev"
+    },
+    {
+      "document": "nanogrid_change_request.pdf",
+      "eventDate": "2026-10-02",
+      "fileDate": "2026-10-02",
+      "label": "Increase requested",
+      "set": "dev"
+    },
+    {
+      "document": "nanogrid_approval.docx",
+      "eventDate": "2026-10-05",
+      "fileDate": "2026-10-05",
+      "label": "Increase approved",
+      "set": "dev"
+    },
+    {
+      "document": "nanogrid_final.pdf",
+      "eventDate": "2026-10-12",
+      "fileDate": "2026-10-12",
+      "label": "Final issued",
+      "set": "dev"
+    },
+    {
+      "document": "waterwise_plan.docx",
+      "eventDate": "2026-09-01",
+      "fileDate": "2026-09-01",
+      "label": "Plan approved",
+      "set": "dev"
+    },
+    {
+      "document": "waterwise_report.xlsx",
+      "eventDate": "2026-09-20",
+      "fileDate": "2026-09-20",
+      "label": "Completion recorded",
+      "set": "dev"
+    },
+    {
+      "document": "harborlight_request.pdf",
+      "eventDate": "2027-01-05",
+      "fileDate": "2027-01-05",
+      "label": "Lighting budget requested",
+      "set": "heldout"
+    },
+    {
+      "document": "harborlight_approval.docx",
+      "eventDate": "2027-01-08",
+      "fileDate": "2027-01-08",
+      "label": "Lighting budget sanctioned",
+      "set": "heldout"
+    },
+    {
+      "document": "harborlight_final.xlsx",
+      "eventDate": "2027-01-20",
+      "fileDate": "2027-01-20",
+      "label": "Close-out recorded",
+      "set": "heldout"
+    },
+    {
+      "document": "orchardeye_plan.pdf",
+      "eventDate": "2027-02-03",
+      "fileDate": "2027-02-03",
+      "label": "Plan approved",
+      "set": "heldout"
+    },
+    {
+      "document": "orchardeye_review.docx",
+      "eventDate": "2027-02-11",
+      "fileDate": "2027-02-11",
+      "label": "Date move proposed",
+      "set": "heldout"
+    },
+    {
+      "document": "orchardeye_final.pdf",
+      "eventDate": "2027-02-18",
+      "fileDate": "2027-02-18",
+      "label": "Final prepared",
+      "set": "heldout"
+    }
+  ],
+  "expectedTimelineOrder": {
+    "harborlight": [
+      "harborlight_request.pdf",
+      "harborlight_approval.docx",
+      "harborlight_final.xlsx"
+    ],
+    "medsaathi": [
+      "medsaathi_proposal.pdf",
+      "medsaathi_meeting.docx",
+      "medsaathi_receipt_scan.pdf",
+      "medsaathi_budget.xlsx",
+      "medsaathi_final_draft.pdf"
+    ],
+    "nanogrid": [
+      "nanogrid_change_request.pdf",
+      "nanogrid_approval.docx",
+      "nanogrid_final.pdf"
+    ],
+    "orchardeye": [
+      "orchardeye_plan.pdf",
+      "orchardeye_review.docx",
+      "orchardeye_final.pdf"
+    ],
+    "waterwise": [
+      "waterwise_plan.docx",
+      "waterwise_report.xlsx"
+    ]
+  },
+  "files": [
+    {
+      "fileDate": "2026-11-03",
+      "format": "pdf",
+      "path": "medsaathi_proposal.pdf",
+      "project": "medsaathi",
+      "projectId": "MS-2026-01",
+      "role": "proposal",
+      "set": "dev"
+    },
+    {
+      "fileDate": "2026-11-07",
+      "format": "docx",
+      "path": "medsaathi_meeting.docx",
+      "project": "medsaathi",
+      "projectId": "MS-2026-01",
+      "role": "meeting notes",
+      "set": "dev"
+    },
+    {
+      "fileDate": "2026-11-09",
+      "format": "png",
+      "path": "medsaathi_receipt.png",
+      "project": "medsaathi",
+      "projectId": "MS-2026-01",
+      "role": "scanned receipt",
+      "set": "dev"
+    },
+    {
+      "fileDate": "2026-11-09",
+      "format": "jpg",
+      "path": "medsaathi_receipt.jpg",
+      "project": "medsaathi",
+      "projectId": "MS-2026-01",
+      "role": "scanned receipt duplicate",
+      "set": "dev"
+    },
+    {
+      "fileDate": "2026-11-09",
+      "format": "pdf-image",
+      "path": "medsaathi_receipt_scan.pdf",
+      "project": "medsaathi",
+      "projectId": "MS-2026-01",
+      "role": "image-only receipt",
+      "set": "dev"
+    },
+    {
+      "fileDate": "2026-11-10",
+      "format": "xlsx",
+      "path": "medsaathi_budget.xlsx",
+      "project": "medsaathi",
+      "projectId": "MS-2026-01",
+      "role": "budget workbook",
+      "set": "dev"
+    },
+    {
+      "fileDate": "2026-11-14",
+      "format": "pdf",
+      "path": "medsaathi_final_draft.pdf",
+      "project": "medsaathi",
+      "projectId": "MS-2026-01",
+      "role": "draft report",
+      "set": "dev"
+    },
+    {
+      "fileDate": "2026-11-04",
+      "format": "pdf",
+      "path": "agrisense_brief.pdf",
+      "project": "agrisense",
+      "projectId": "AS-2026-04",
+      "role": "distractor project",
+      "set": "dev"
+    },
+    {
+      "fileDate": "2026-11-02",
+      "format": "pdf",
+      "path": "lecture_notes.pdf",
+      "project": "none",
+      "projectId": null,
+      "role": "unrelated distractor",
+      "set": "dev"
+    },
+    {
+      "fileDate": "2026-10-02",
+      "format": "pdf",
+      "path": "nanogrid_change_request.pdf",
+      "project": "nanogrid",
+      "projectId": "NG-2026-09",
+      "role": "change request",
+      "set": "dev"
+    },
+    {
+      "fileDate": "2026-10-05",
+      "format": "docx",
+      "path": "nanogrid_approval.docx",
+      "project": "nanogrid",
+      "projectId": "NG-2026-09",
+      "role": "approval letter",
+      "set": "dev"
+    },
+    {
+      "fileDate": "2026-10-12",
+      "format": "pdf",
+      "path": "nanogrid_final.pdf",
+      "project": "nanogrid",
+      "projectId": "NG-2026-09",
+      "role": "final report",
+      "set": "dev"
+    },
+    {
+      "fileDate": "2026-09-01",
+      "format": "docx",
+      "path": "waterwise_plan.docx",
+      "project": "waterwise",
+      "projectId": "WW-2026-03",
+      "role": "clean plan",
+      "set": "dev"
+    },
+    {
+      "fileDate": "2026-09-20",
+      "format": "xlsx",
+      "path": "waterwise_report.xlsx",
+      "project": "waterwise",
+      "projectId": "WW-2026-03",
+      "role": "clean report",
+      "set": "dev"
+    },
+    {
+      "fileDate": "2027-01-05",
+      "format": "pdf",
+      "path": "heldout/harborlight_request.pdf",
+      "project": "harborlight",
+      "projectId": "HL-2027-02",
+      "role": "held-out request",
+      "set": "heldout"
+    },
+    {
+      "fileDate": "2027-01-08",
+      "format": "docx",
+      "path": "heldout/harborlight_approval.docx",
+      "project": "harborlight",
+      "projectId": "HL-2027-02",
+      "role": "held-out approval",
+      "set": "heldout"
+    },
+    {
+      "fileDate": "2027-01-20",
+      "format": "xlsx",
+      "path": "heldout/harborlight_final.xlsx",
+      "project": "harborlight",
+      "projectId": "HL-2027-02",
+      "role": "held-out final",
+      "set": "heldout"
+    },
+    {
+      "fileDate": "2027-02-03",
+      "format": "pdf",
+      "path": "heldout/orchardeye_plan.pdf",
+      "project": "orchardeye",
+      "projectId": "OE-2027-07",
+      "role": "held-out plan",
+      "set": "heldout"
+    },
+    {
+      "fileDate": "2027-02-11",
+      "format": "docx",
+      "path": "heldout/orchardeye_review.docx",
+      "project": "orchardeye",
+      "projectId": "OE-2027-07",
+      "role": "held-out review",
+      "set": "heldout"
+    },
+    {
+      "fileDate": "2027-02-18",
+      "format": "pdf",
+      "path": "heldout/orchardeye_final.pdf",
+      "project": "orchardeye",
+      "projectId": "OE-2027-07",
+      "role": "held-out final",
+      "set": "heldout"
+    },
+    {
+      "fileDate": "2027-01-04",
+      "format": "pdf",
+      "path": "heldout/harbor_safety_notes.pdf",
+      "project": "none",
+      "projectId": null,
+      "role": "held-out name trap",
+      "set": "heldout"
+    },
+    {
+      "fileDate": "2027-02-01",
+      "format": "xlsx",
+      "path": "heldout/orchard_due_dates.xlsx",
+      "project": "none",
+      "projectId": null,
+      "role": "held-out date trap",
+      "set": "heldout"
+    }
+  ],
+  "mustNotLink": [
+    {
+      "set": "dev",
+      "source": "medsaathi_proposal.pdf",
+      "target": "agrisense_brief.pdf",
+      "trap": "same guide and deadline; different ids"
+    },
+    {
+      "set": "dev",
+      "source": "medsaathi_proposal.pdf",
+      "target": "lecture_notes.pdf",
+      "trap": "same due date; lecture is not project evidence"
+    },
+    {
+      "set": "dev",
+      "source": "medsaathi_final_draft.pdf",
+      "target": "agrisense_brief.pdf",
+      "trap": "same deadline; different ids"
+    },
+    {
+      "set": "heldout",
+      "source": "harborlight_request.pdf",
+      "target": "harbor_safety_notes.pdf",
+      "trap": "shared Harbor word only"
+    },
+    {
+      "set": "heldout",
+      "source": "orchardeye_plan.pdf",
+      "target": "orchard_due_dates.xlsx",
+      "trap": "shared orchard/date language only"
+    }
+  ],
+  "ocrExpectedValues": [
+    {
+      "currency": "INR",
+      "documents": [
+        "medsaathi_receipt.png",
+        "medsaathi_receipt.jpg",
+        "medsaathi_receipt_scan.pdf"
+      ],
+      "field": "expense_item",
+      "item": "pilot kits",
+      "linkedCell": "Summary!B4",
+      "linkedDocument": "medsaathi_budget.xlsx",
+      "normalizedValue": "4250",
+      "rawVariants": [
+        "Rs 4,250",
+        "₹4,250",
+        "Rs 4,25O"
+      ]
+    }
+  ],
+  "oversizedFixture": {
+    "stored": false,
+    "testInstruction": "Generate 25 MiB + 1 byte during the upload test."
+  },
+  "projects": {
+    "agrisense": {
+      "id": "AS-2026-04",
+      "name": "AgriSense",
+      "set": "dev"
+    },
+    "harborlight": {
+      "id": "HL-2027-02",
+      "name": "HarborLight",
+      "set": "heldout"
+    },
+    "medsaathi": {
+      "id": "MS-2026-01",
+      "name": "MedSaathi",
+      "set": "dev"
+    },
+    "nanogrid": {
+      "id": "NG-2026-09",
+      "name": "NanoGrid",
+      "set": "dev"
+    },
+    "orchardeye": {
+      "id": "OE-2027-07",
+      "name": "OrchardEye",
+      "set": "heldout"
+    },
+    "waterwise": {
+      "id": "WW-2026-03",
+      "name": "WaterWise",
+      "set": "dev"
+    }
+  },
+  "robustnessFiles": [
+    {
+      "expected": "reject empty file",
+      "path": "robustness/empty.pdf"
+    },
+    {
+      "expected": "readable extraction failure",
+      "path": "robustness/corrupted.pdf"
+    },
+    {
+      "expected": "reject magic mismatch",
+      "path": "robustness/wrong_extension.pdf"
+    },
+    {
+      "expected": "reject unsupported type",
+      "path": "robustness/unsupported.txt"
+    }
+  ],
+  "rupeeFont": "arial.ttf",
+  "schemaVersion": 1,
+  "seed": 20261114,
+  "singleSourceOfTruth": "Scenario constants in backend/tests/make_test_data.py",
+  "trueRelationships": [
+    {
+      "reason": "same project id and proposal discussed",
+      "set": "dev",
+      "source": "medsaathi_proposal.pdf",
+      "target": "medsaathi_meeting.docx",
+      "type": "same_topic"
+    },
+    {
+      "reason": "draft cites 7 November meeting",
+      "set": "dev",
+      "source": "medsaathi_meeting.docx",
+      "target": "medsaathi_final_draft.pdf",
+      "type": "references"
+    },
+    {
+      "reason": "requested 65000 appears in workbook",
+      "set": "dev",
+      "source": "medsaathi_meeting.docx",
+      "target": "medsaathi_budget.xlsx",
+      "type": "supports"
+    },
+    {
+      "reason": "pilot kits 4250 is a line item",
+      "set": "dev",
+      "source": "medsaathi_receipt.png",
+      "target": "medsaathi_budget.xlsx",
+      "type": "supports"
+    },
+    {
+      "reason": "duplicate scan supports pilot kits line",
+      "set": "dev",
+      "source": "medsaathi_receipt.jpg",
+      "target": "medsaathi_budget.xlsx",
+      "type": "supports"
+    },
+    {
+      "reason": "image-only receipt supports pilot kits line",
+      "set": "dev",
+      "source": "medsaathi_receipt_scan.pdf",
+      "target": "medsaathi_budget.xlsx",
+      "type": "supports"
+    },
+    {
+      "reason": "draft retains proposal values and id",
+      "set": "dev",
+      "source": "medsaathi_proposal.pdf",
+      "target": "medsaathi_final_draft.pdf",
+      "type": "revision_of"
+    },
+    {
+      "reason": "letter explicitly approves request",
+      "set": "dev",
+      "source": "nanogrid_change_request.pdf",
+      "target": "nanogrid_approval.docx",
+      "type": "supports"
+    },
+    {
+      "reason": "final uses approved value",
+      "set": "dev",
+      "source": "nanogrid_approval.docx",
+      "target": "nanogrid_final.pdf",
+      "type": "supports"
+    },
+    {
+      "reason": "same id and unchanged amount",
+      "set": "dev",
+      "source": "waterwise_plan.docx",
+      "target": "waterwise_report.xlsx",
+      "type": "same_topic"
+    },
+    {
+      "reason": "held-out approval names request",
+      "set": "heldout",
+      "source": "harborlight_request.pdf",
+      "target": "harborlight_approval.docx",
+      "type": "supports"
+    },
+    {
+      "reason": "held-out final uses sanctioned amount",
+      "set": "heldout",
+      "source": "harborlight_approval.docx",
+      "target": "harborlight_final.xlsx",
+      "type": "supports"
+    },
+    {
+      "reason": "held-out project id",
+      "set": "heldout",
+      "source": "orchardeye_plan.pdf",
+      "target": "orchardeye_review.docx",
+      "type": "same_topic"
+    },
+    {
+      "reason": "held-out final cites review",
+      "set": "heldout",
+      "source": "orchardeye_review.docx",
+      "target": "orchardeye_final.pdf",
+      "type": "references"
+    }
+  ],
+  "unsupportedFormats": [
+    ".txt",
+    ".eml"
+  ]
+}

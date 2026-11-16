@@ -1,0 +1,11 @@
+{
+  "weights": {
+    "entityOverlap": 0.45,
+    "semanticSimilarity": 0.25,
+    "explicitReference": 0.20,
+    "temporalContext": 0.10
+  },
+  "threshold": 0.42,
+  "tunedOn": "development synthetic corpus only"
+}
+
